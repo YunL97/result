@@ -1,0 +1,60 @@
+import pyautogui
+from time import sleep
+
+
+
+
+
+
+
+
+
+#nextpage=pyautogui.locateCenterOnScreen('nextpage.png')
+#pyautogui.click(966,817)
+
+#page=pyautogui.locateCenterOnScreen('page.png')
+
+keep=1
+while True:
+    
+
+    try:
+        nextpage=pyautogui.locateCenterOnScreen('nextpage.png')
+        x1,y1=nextpage
+        if(x1>200):
+            pyautogui.click(966,817) 
+            print("다음페이지")
+    except:
+        pass
+
+    try:
+        soo=pyautogui.locateCenterOnScreen('soo.png')
+        x3,y3=soo
+        if(x3>200):
+            pyautogui.click(941,85) 
+            print("다음")
+    except:
+        pass
+
+    try:
+        quiz=pyautogui.locateCenterOnScreen('quiz.png')
+        x2,y2=quiz
+        if(y2<400):
+            pyautogui.click(937,89)
+            print("퀴즈")
+    except:
+        pass    
+    keep=keep+1
+    print(keep)
+    sleep(10)
+
+   
+
+   
+
+
+    
+    
+     
+        
+
